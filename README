@@ -2,7 +2,10 @@
 
 > NOTE: THIS IS AN EXPANSION OF ESP32-Sensor-Dashboard
 
-It reads temperature and humidity using a BME280 sensor and streams live data to a web page using WebSockets no page refresh needed. The data updates instantly in the browser the moment the ESP32 has a new reading. This project also serves as the foundation for MQTT publishing and Node-RED dashboard visualization. Everything runs on millis, no delay used anywhere.
+It reads temperature and humidity using a BME280 sensor and streams live data to a web page using WebSockets no page refresh needed. 
+The data updates instantly in the browser the moment the ESP32 has a new reading. 
+This project also serves as the foundation for MQTT publishing and Node-RED dashboard visualization. 
+Everything runs on millis, no delay used anywhere.
 
 | ![Setup](images/setup.jpg) | ![OLED](images/oled.jpg)
 
