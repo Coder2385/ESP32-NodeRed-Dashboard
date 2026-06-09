@@ -102,4 +102,39 @@ lib_deps =
 
 ## 🧠 How It Works
 
+## Hardware (KiCad)
+
+The hardware design for this project was created in KiCad. It contains the 
+complete schematic and PCB layout for an ESP32-based sensor node.
+
+### Components
+
+- **ESP32 DOIT DevKit V1** (30-pin) — microcontroller
+- **BME280** — temperature, humidity, and pressure sensor (I²C)
+- **SSD1306 OLED** (0.96", I²C) — display
+- **Push button** — user input
+- **Red LED** with 220Ω current-limiting resistor — status indicator
+- **10kΩ resistor** — pull-up for the button
+
+### Design
+
+- Schematic drawn and verified with ERC (no errors)
+- BME280 and OLED share the I²C bus (SDA/SCL)
+- PCB fully routed with a GND plane
+- Passed the Design Rules Check (DRC) with no errors or warnings
+
+### Files
+
+- `*.kicad_sch` — schematic
+- `*.kicad_pcb` — PCB layout
+- `*.kicad_pro` — project file
+
+### Libraries used
+
+The ESP32 and OLED are not included in KiCad by default and come from 
+community libraries:
+
+- [ESP32 DevKit V1 (30-pin)](https://github.com/syauqibilfaqih/ESP32-DevKit-V1-DOIT)
+- [SSD1306 OLED](https://github.com/V01Ddev/kicad-ssd1306-oled-library)
+
 The ESP32 reads temperature and humidity every 2 seconds. Instead of rebuilding and sending the entire HTML page on each update, it sends only the new values via a WebSocket connection. The browser receives the values instantly and updates only the relevant parts of the page.
