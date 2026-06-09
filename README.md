@@ -1,5 +1,5 @@
 # ESP32-NodeRed-Dashboard
-ESP32 project that streams live temperature and humidity data to a web page using WebSockets. The browser updates instantly without any page refresh. Serves as the foundation for MQTT publishing and Node-RED dashboard visualization. No delay used anywhere, everything runs on millis.
+ESP32 project that streams live temperature and humidity data to a web page using WebSockets. The browser updates instantly without any page refresh. Serves as the foundation for MQTT publishing and Node-RED dashboard visualization. No delay used anywhere, everything runs on millis. Also I have added my Kicad project for this with a schematic drawing, a PCB-editor and a 3D vieuwer to visualize how the PCB would look like.
 
 https://github.com/user-attachments/assets/4c9549db-39d6-406f-8492-63ce14ac5b4d
 
